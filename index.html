@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffe3ec">
+  <title>Palak, maan jao na please 🥺</title>
+  <meta name="description" content="Ek chhota sa teddy tumse kuch kehna chahta hai...">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B8%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-hearts" id="bgHearts" aria-hidden="true"></div>
+
+  <main class="app">
+
+    <!-- Opening screen -->
+    <section class="screen" id="screen-intro" aria-labelledby="introTitle">
+      <div class="stage stage-intro">
+        <div class="teddy-wrap anim-bob" id="introTeddy" aria-hidden="true"></div>
+      </div>
+      <h1 class="title" id="introTitle">Helloooo Palak ji 🧸💕</h1>
+      <p class="sub">Ek chhota sa teddy tumse kuch kehna chahta hai...</p>
+      <p class="question">Will you forgive me, Palak?</p>
+      <div class="actions">
+        <button type="button" class="btn btn-yes" id="introYes">YES 🥹💗</button>
+        <button type="button" class="btn btn-no" id="introNo">NO 😤</button>
+      </div>
+      <p class="warn">Warning: Extreme cuteness ahead. Proceed with your heart. 💌</p>
+    </section>
+
+    <!-- Apology levels -->
+    <section class="screen" id="screen-level" hidden aria-label="Apology levels">
+      <div class="level-body" id="levelBody">
+        <div class="stage" id="levelStage">
+          <div class="floaters" id="floaters" aria-hidden="true"></div>
+          <div class="bubble" id="bubble" hidden></div>
+          <div class="teddy-wrap" id="levelTeddy" aria-hidden="true"></div>
+        </div>
+        <div class="card">
+          <p class="message" id="message" aria-live="polite"></p>
+          <p class="signature" id="levelSig" hidden></p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn btn-yes" id="yesBtn">YES 🥹💗</button>
+        <button type="button" class="btn btn-no" id="noBtn">NO 😤</button>
+      </div>
+    </section>
+
+    <!-- Celebration -->
+    <section class="screen" id="screen-yay" hidden aria-labelledby="yayTitle">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <div class="stage stage-yay" id="hugStage" aria-hidden="true">
+        <div class="yay-deco deco-l">🌷</div>
+        <div class="yay-deco deco-r">🌸</div>
+        <div class="yay-deco deco-t1">✨</div>
+        <div class="yay-deco deco-t2">⭐</div>
+        <div class="hug-row" id="hugRow"></div>
+        <div class="hug-heart" id="hugHeart">💗</div>
+        <div class="jumper" id="jumper"></div>
+      </div>
+      <h2 class="title" id="yayTitle">PALAK MAAN GAYI?! 😭💗🧸</h2>
+      <p class="sub yay-text">YAYYYYY! Thank you for giving me a chance. I'm really sorry, Palak. Tum mere liye bahut special ho. Ab ek virtual hug toh banta hai na? 🫂💗</p>
+      <p class="signature" id="yaySig" hidden></p>
+      <p class="hug-msg" id="hugMsg" aria-live="polite"></p>
+      <div class="actions actions-col">
+        <button type="button" class="btn btn-yes btn-big" id="hugBtn">SEND A VIRTUAL HUG 🫂</button>
+        <button type="button" class="btn btn-no" id="restartBtn">Restart 🔄</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Secret surprise -->
+  <button type="button" class="gift-btn" id="giftBtn" aria-label="Open secret surprise" aria-haspopup="dialog">🎁</button>
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Secret surprise 🎁</h3>
+      <p id="secretText"></p>
+      <button type="button" class="btn btn-yes" id="modalClose">Close 💗</button>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">Please enable JavaScript to meet the teddies 🧸</p></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
