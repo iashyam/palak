@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+  <script>
+    // GitHub Pages serves this file for unknown paths like /palak-apology/Riya.
+    // Redirect to the app root with the name in ?n=; script.js reads it and restores the pretty path.
+    // 1 = project site (user.github.io/repo/Name); set to 0 for a user/custom-domain root site.
+    var segmentsToKeep = 1;
+    var parts = location.pathname.split('/').filter(Boolean);
+    var base = '/' + parts.slice(0, segmentsToKeep).join('/');
+    var name = parts.slice(segmentsToKeep).join('/');
+    location.replace(base.replace(/\/$/, '') + '/?n=' + encodeURIComponent(decodeURIComponent(name)) + location.hash);
+  </script>
+</head>
+<body></body>
+</html>

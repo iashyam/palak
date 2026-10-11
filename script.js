@@ -9,11 +9,11 @@ const CONFIG = {
 
   // The heartfelt message on Level 60.
   finalMessage:
-    'Palak, 60 baar poochhne ke baad bhi ek hi baat kehni hai... I\'m genuinely sorry. ' +
+    '{name}, 60 baar poochhne ke baad bhi ek hi baat kehni hai... I\'m genuinely sorry. ' +
     'Tum mere liye bahut special ho. Agar tum ready ho, toh kya hum baat karke sab theek kar sakte hain? 💗',
 
-  // Shown if Palak taps "Abhi nahi" on the last level. No pressure.
-  softCloseMessage: 'Koi baat nahi, Palak. Jitna time chahiye lo. Main yahin hoon, bina kisi pressure ke. 💗',
+  // Shown if {name} taps "Abhi nahi" on the last level. No pressure.
+  softCloseMessage: 'Koi baat nahi, {name}. Jitna time chahiye lo. Main yahin hoon, bina kisi pressure ke. 💗',
 
   // The gift-icon popup.
   secretMessage:
@@ -32,7 +32,7 @@ const CONFIG = {
    ===================================================================== */
 const LEVELS = [
   // ---- 1–10: Shy and sweet ----
-  { message: 'Palak, please na 🥺', face: 'shy', prop: 'flower', count: 1, fur: 0, anim: 'sway', bg: ['🌸', '✨'], reaction: 'Teddy ne chupke se phool sungha 🌸' },
+  { message: '{name}, please na 🥺', face: 'shy', prop: 'flower', count: 1, fur: 0, anim: 'sway', bg: ['🌸', '✨'], reaction: 'Teddy ne chupke se phool sungha 🌸' },
   { message: 'Ek baar smile kar do, please?', face: 'hopeful', prop: 'flower', count: 1, fur: 2, anim: 'bob', bg: ['🌼', '🌷'], reaction: 'Teddy ki aankhein chamak gayi ✨' },
   { message: 'Galti ho gayi yaar, sorry na 💗', face: 'embarrassed', prop: 'none', count: 1, fur: 4, anim: 'shiver', bg: ['💗', '💦'], reaction: 'Teddy ne sharma ke muh chhupa liya 🙈' },
   { message: 'Maan jao na please 👉👈', face: 'shy', prop: 'none', count: 1, fur: 1, anim: 'sway', bg: ['👉', '👈', '💕'], reaction: 'Teddy ki ungliyan aapas mein takra gayi 👉👈' },
@@ -45,14 +45,14 @@ const LEVELS = [
 
   // ---- 11–20: Cute gifts ----
   { message: 'Chocolate chahiye? 🍫 Please maan jao!', face: 'happy', prop: 'chocolate', count: 1, fur: 0, anim: 'bob', bg: ['🍫', '🍬'], reaction: 'Teddy ne chocolate ka ek tukda chakh liya... sorry! 🍫' },
-  { message: 'Palak ji, teddy ki izzat ka sawaal hai 😭', face: 'cry', prop: 'rose', count: 1, fur: 2, anim: 'sob', bg: ['😭', '🌹'], reaction: 'Teddy ki izzat thodi si gir gayi 😭' },
+  { message: '{name} ji, teddy ki izzat ka sawaal hai 😭', face: 'cry', prop: 'rose', count: 1, fur: 2, anim: 'sob', bg: ['😭', '🌹'], reaction: 'Teddy ki izzat thodi si gir gayi 😭' },
   { message: 'Ek hug se kaam chal jayega kya? 🥹', face: 'hopeful', prop: 'heart', count: 1, fur: 1, anim: 'sway', bg: ['🫂', '💞'], reaction: 'Teddy ne baahein failayi... hawa ko hug kiya 🫂' },
   { message: 'Ek rose, ek sorry, aur ek bahut sad teddy 🌹', face: 'teary', prop: 'rose', count: 1, fur: 3, anim: 'bob', bg: ['🌹', '🥀'], reaction: 'Rose ne bhi teddy ki taraf se sifarish ki 🌹' },
   { message: 'Gubbare le aaya hoon! Gussa udhao, hawa mein jaane do 🎈', face: 'excited', prop: 'balloon', count: 1, fur: 4, anim: 'float', bg: ['🎈', '🎉'], reaction: 'Ek gubbara phat gaya. Sorry gubbare ke liye bhi 🎈' },
   { message: 'Maine ek chitthi likhi hai. Spelling mistakes ke liye bhi sorry 💌', face: 'shy', prop: 'letter', count: 1, fur: 5, anim: 'sway', bg: ['💌', '✍️'], reaction: 'Chitthi mein "sory" likha tha... fir theek kiya ✍️' },
   { message: 'Dairy Milk, Kitkat, sab laaya hoon. Ab toh haan bol do 🍫', face: 'excited', prop: 'chocolate', count: 1, fur: 6, anim: 'wiggle', bg: ['🍫', '🍪', '🍩'], reaction: 'Teddy ne chocolate ki poori dukaan khol di 🍬' },
   { message: 'Ye gift wrap maine khud kiya. Thoda tedha hai, par dil seedha hai 🎁', face: 'happy', prop: 'gift', count: 1, fur: 3, anim: 'bob', bg: ['🎁', '🎀'], reaction: 'Tape teddy ke haath mein chipak gayi 🎀' },
-  { message: 'Sorry cake! Isme sirf pyaar aur thodi si cheeni hai 🍰', face: 'hopeful', prop: 'cake', count: 1, fur: 1, anim: 'sway', bg: ['🍰', '🕯️'], reaction: 'Teddy ne moombatti phoonk di, wish: "Palak maan jaye" 🕯️' },
+  { message: 'Sorry cake! Isme sirf pyaar aur thodi si cheeni hai 🍰', face: 'hopeful', prop: 'cake', count: 1, fur: 1, anim: 'sway', bg: ['🍰', '🕯️'], reaction: 'Teddy ne moombatti phoonk di, wish: "{name} maan jaye" 🕯️' },
   { message: 'Gubbare ke saath udne ki koshish ki. Gir gaya. Phir bhi sorry 🥲', face: 'shocked', prop: 'balloon', count: 1, fur: 2, anim: 'jump', bg: ['🎈', '☁️'], reaction: 'Dhap! Teddy zameen par, sorry abhi bhi zinda 🎈' },
 
   // ---- 21–30: Teddy emotional drama ----
@@ -60,41 +60,41 @@ const LEVELS = [
   { message: 'Hum sab milke sorry bol rahe hain. PLEASEEE!', face: 'cry', face2: 'hopeful', prop: 'megaphone', count: 3, fur: 4, anim: 'wiggle', bg: ['📣', '🥺'], reaction: 'Megaphone mein se "sorryyy" 3 baar goonja 📣' },
   { message: 'Ek chhoti si smile? Bas itni si? 🥺', face: 'hopeful', face2: 'teary', prop: 'flower', count: 2, fur: 1, anim: 'sway', bg: ['🙂', '🌸'], reaction: 'Dono teddies ne smile ka naap liya: 0.5 cm 🙂' },
   { message: 'Humne board pe likha hai... padh lo please 🥹', face: 'teary', prop: 'sign', sign: 'PLZ MAAN JAO', count: 3, fur: 3, anim: 'sob', bg: ['🪧', '🥹'], reaction: 'Board ulta pakda tha. Ab seedha 🪧' },
-  { message: 'Committee ne vote kiya: 4-0 se Palak sahi hain aur teddy galat!', face: 'embarrassed', prop: 'sign', sign: '4-0', count: 4, fur: 2, anim: 'bob', bg: ['🗳️', '⚖️'], reaction: 'Ek teddy ne apne hi khilaf vote diya, imaandaar hai 🗳️' },
+  { message: 'Committee ne vote kiya: 4-0 se {name} sahi hain aur teddy galat!', face: 'embarrassed', prop: 'sign', sign: '4-0', count: 4, fur: 2, anim: 'bob', bg: ['🗳️', '⚖️'], reaction: 'Ek teddy ne apne hi khilaf vote diya, imaandaar hai 🗳️' },
   { message: 'Aansuon ka matka le aaya hoon. Bhar gaya toh zimmedar aap hogi 😭', face: 'cry', prop: 'tissue', count: 1, fur: 5, anim: 'sob', bg: ['💧', '💦', '🫗'], reaction: 'Matka chhalak gaya. Poocha nahi, pochha laga lo 💦' },
   { message: 'Ek teddy rota hai, doosra usse chup karata hai. Dono tumhari smile ka wait kar rahe hain', face: 'cry', face2: 'happy', prop: 'tissue', count: 2, fur: 6, anim: 'sway', bg: ['🫂', '💧'], reaction: 'Chup karate karate dusra bhi rone laga 😭' },
-  { message: 'Breaking news: Palak ji abhi tak naraz hain! Teddies in shock!', face: 'shocked', prop: 'megaphone', count: 4, fur: 1, anim: 'jump', bg: ['📺', '😱'], reaction: 'News reporter teddy behosh ho gaya 😱' },
+  { message: 'Breaking news: {name} ji abhi tak naraz hain! Teddies in shock!', face: 'shocked', prop: 'megaphone', count: 4, fur: 1, anim: 'jump', bg: ['📺', '😱'], reaction: 'News reporter teddy behosh ho gaya 😱' },
   { message: 'Hum protest pe baithe hain jab tak tum haan nahi bologi ✊', face: 'smirk', face2: 'cry', prop: 'sign', sign: 'SORRY', count: 4, fur: 4, anim: 'wiggle', bg: ['✊', '🪧'], reaction: 'Protest 5 minute mein bhookh hadtal mein badla 🍕' },
   { message: 'Teddies ne pocket money jod ke ye sorry card banaya 💌', face: 'hopeful', face2: 'shy', prop: 'letter', count: 3, fur: 5, anim: 'bob', bg: ['💌', '🪙'], reaction: 'Card ka glitter poore ghar mein phail gaya ✨' },
 
   // ---- 31–40: Bollywood drama ----
   { message: 'Aap haan bol do, background mein violins bajenge 🎻', face: 'love', prop: 'violin', count: 1, fur: 0, anim: 'sway', bg: ['🎻', '🎶'], reaction: 'Violin ki ek taar toot gayi, drama full 🎻' },
-  { message: 'Maine toh sorry mein PhD kar li!', face: 'excited', prop: 'cap', count: 1, fur: 3, anim: 'jump', bg: ['🎓', '📜'], reaction: 'Thesis ka title: "Palak ko manane ke 101 tareeke" 🎓' },
+  { message: 'Maine toh sorry mein PhD kar li!', face: 'excited', prop: 'cap', count: 1, fur: 3, anim: 'jump', bg: ['🎓', '📜'], reaction: 'Thesis ka title: "{name} ko manane ke 101 tareeke" 🎓' },
   { message: 'Teddy shocked hai, par hope abhi baaki hai!', face: 'shocked', prop: 'none', count: 1, fur: 2, anim: 'shiver', bg: ['⚡', '😲'], reaction: 'Teddy ke kaan khade ho gaye ⚡' },
-  { message: 'Palak... tum meri life ki heroine ho, aur main... side-teddy 🎬', face: 'teary', prop: 'clapper', count: 1, fur: 1, anim: 'sway', bg: ['🎬', '⭐'], reaction: 'Director bola "Cut!" Teddy bola "Nahi, dobara!" 🎬' },
+  { message: '{name}... tum meri life ki heroine ho, aur main... side-teddy 🎬', face: 'teary', prop: 'clapper', count: 1, fur: 1, anim: 'sway', bg: ['🎬', '⭐'], reaction: 'Director bola "Cut!" Teddy bola "Nahi, dobara!" 🎬' },
   { message: 'Itna bada bouquet laaya hoon! Auto mein nahi aaya, helicopter se aaya 🚁', face: 'excited', prop: 'giantBouquet', count: 1, fur: 4, anim: 'bob', bg: ['🚁', '💐'], reaction: 'Helicopter ka kiraya EMI pe hai 🚁' },
-  { message: 'Kuch kuch hota hai, Palak. Aur tumhare bina kuch kuch nahi hota 💔', face: 'cry', prop: 'rose', count: 1, fur: 6, anim: 'sob', bg: ['💔', '🌹'], reaction: 'Teddy ne slow motion mein baal jhatke 💔' },
-  { message: 'Ek haan ki keemat tum kya jaano, Palak babu! 😎', face: 'smirk', prop: 'shades', count: 1, fur: 0, anim: 'wiggle', bg: ['😎', '🔥'], reaction: 'Chashma gir gaya. Dialogue bhi 😎' },
+  { message: 'Kuch kuch hota hai, {name}. Aur tumhare bina kuch kuch nahi hota 💔', face: 'cry', prop: 'rose', count: 1, fur: 6, anim: 'sob', bg: ['💔', '🌹'], reaction: 'Teddy ne slow motion mein baal jhatke 💔' },
+  { message: 'Ek haan ki keemat tum kya jaano, {name} babu! 😎', face: 'smirk', prop: 'shades', count: 1, fur: 0, anim: 'wiggle', bg: ['😎', '🔥'], reaction: 'Chashma gir gaya. Dialogue bhi 😎' },
   { message: 'Slow motion mein daud ke aaya. Baarish bhi bulwayi. Ab toh maan jao 🌧️', face: 'cry', prop: 'umbrella', count: 1, fur: 5, anim: 'sob', bg: ['🌧️', '💧', '🌈'], reaction: 'Chhatri ulti ho gayi, drama poora 🌧️' },
   { message: 'Interval ho gaya! Popcorn lo, par pehle haan bolo 🍿', face: 'happy', prop: 'popcorn', count: 1, fur: 2, anim: 'bob', bg: ['🍿', '🎞️'], reaction: 'Popcorn chhat tak uchhal gaya 🍿' },
-  { message: 'Climax mein hero ko maafi milti hai. Script yahi kehti hai 🎬', face: 'hopeful', prop: 'clapper', count: 1, fur: 3, anim: 'sway', bg: ['📜', '🎭'], reaction: 'Script mein "Palak maan jaati hai" highlight kiya 📜' },
+  { message: 'Climax mein hero ko maafi milti hai. Script yahi kehti hai 🎬', face: 'hopeful', prop: 'clapper', count: 1, fur: 3, anim: 'sway', bg: ['📜', '🎭'], reaction: 'Script mein "{name} maan jaati hai" highlight kiya 📜' },
 
   // ---- 41–50: Teddy kingdom ----
-  { message: 'Teddy parliament mein sirf ek bill pass hua: Palak maan jao!', face: 'happy', prop: 'sign', sign: 'THE BILL', count: 3, fur: 6, anim: 'bob', bg: ['🏛️', '📜'], reaction: 'Opposition ne bhi support kiya, chai pe 🏛️' },
+  { message: 'Teddy parliament mein sirf ek bill pass hua: {name} maan jao!', face: 'happy', prop: 'sign', sign: 'THE BILL', count: 3, fur: 6, anim: 'bob', bg: ['🏛️', '📜'], reaction: 'Opposition ne bhi support kiya, chai pe 🏛️' },
   { message: 'Poora teddy kingdom aapka intezaar kar raha hai!', face: 'hopeful', prop: 'crown', count: 5, fur: 4, anim: 'bob', bg: ['🏰', '👑'], reaction: 'Kingdom ki bell baji: dong dong dong 🔔' },
   { message: 'Teddy orchestra ready hai: dhol, shehnai, aur ek bahut besura trumpet 🎺', face: 'excited', prop: 'trumpet', count: 4, fur: 1, anim: 'wiggle', bg: ['🎺', '🥁', '🎶'], reaction: 'Trumpet wale ne galat note maara. Sab hans pade 🎺' },
-  { message: 'Royal ceremony shuru: Palak ji ko "Queen of Maafi" ki padvi milegi 👑', face: 'love', prop: 'crown', count: 2, fur: 2, anim: 'sway', bg: ['👑', '🎊'], reaction: 'Taaj thoda bada nikla, aankhon pe aa gaya 👑' },
-  { message: 'Humne toh moon se bhi request kar di 🌙', face: 'hopeful', prop: 'moon', count: 1, fur: 3, anim: 'float', bg: ['🌙', '⭐', '✨'], reaction: 'Chaand ne kaha: "Pehle Palak se poochho" 🌙' },
+  { message: 'Royal ceremony shuru: {name} ji ko "Queen of Maafi" ki padvi milegi 👑', face: 'love', prop: 'crown', count: 2, fur: 2, anim: 'sway', bg: ['👑', '🎊'], reaction: 'Taaj thoda bada nikla, aankhon pe aa gaya 👑' },
+  { message: 'Humne toh moon se bhi request kar di 🌙', face: 'hopeful', prop: 'moon', count: 1, fur: 3, anim: 'float', bg: ['🌙', '⭐', '✨'], reaction: 'Chaand ne kaha: "Pehle {name} se poochho" 🌙' },
   { message: 'Aasman bhar diya dilon se. Ek heart tumhara bhi hai ❤️', face: 'love', prop: 'heart', count: 3, fur: 1, anim: 'bob', bg: ['❤️', '💖', '💗', '💞'], reaction: 'Itne dil, ki aasman pink ho gaya 💖' },
-  { message: 'Teddy army ne salute kiya: "Palak ma\'am, humein maaf kar do!"', face: 'smirk', face2: 'shy', prop: 'flag', count: 5, fur: 0, anim: 'jump', bg: ['🫡', '🚩'], reaction: 'Poori army ek saath chheenk padi. Salute tuta 🫡' },
+  { message: 'Teddy army ne salute kiya: "{name} ma\'am, humein maaf kar do!"', face: 'smirk', face2: 'shy', prop: 'flag', count: 5, fur: 0, anim: 'jump', bg: ['🫡', '🚩'], reaction: 'Poori army ek saath chheenk padi. Salute tuta 🫡' },
   { message: 'Royal chef ne sorry-pudding banaya hai. Taste kar lo, phir gussa karna 🍮', face: 'happy', prop: 'cake', count: 1, fur: 6, anim: 'bob', bg: ['🍮', '🧑‍🍳'], reaction: 'Chef ne khud hi pudding chakh liya, quality check 🍮' },
   { message: 'Raja teddy apna taaj utaar ke aapke kadmon mein rakh raha hai 👑', face: 'cry', prop: 'crown', count: 1, fur: 4, anim: 'sob', bg: ['👑', '🥺'], reaction: 'Taaj ludhak ke palang ke neeche chala gaya 👑' },
-  { message: 'Itna sab ho gaya! Kingdom mein chhutti ghoshit: "Palak Day" 🎉', face: 'excited', prop: 'wand', count: 3, fur: 3, anim: 'jump', bg: ['🎉', '🎆', '✨'], reaction: 'Aatishbaazi mein teddy ki poonchh jal gayi. Bas thodi si 🎆' },
+  { message: 'Itna sab ho gaya! Kingdom mein chhutti ghoshit: "{name} Day" 🎉', face: 'excited', prop: 'wand', count: 3, fur: 3, anim: 'jump', bg: ['🎉', '🎆', '✨'], reaction: 'Aatishbaazi mein teddy ki poonchh jal gayi. Bas thodi si 🎆' },
 
   // ---- 51–59: Legendary cuteness ----
   { message: 'Final-final-final request. Pakka wala final. 🥺', face: 'teary', prop: 'flower', count: 1, fur: 5, anim: 'bob', scale: 1.15, bg: ['🥺', '🌟'], reaction: 'Teddy ne ungliyan cross ki. Dono haath se 🤞' },
   { message: 'Baby teddies bhi aa gaye: "Didi, please maan jao na..." 🍼', face: 'hopeful', face2: 'shy', prop: 'none', count: 3, fur: 1, anim: 'wiggle', scale: 0.7, bg: ['🍼', '🧸', '💕'], reaction: 'Ek baby teddy so gaya, doosra tutla raha hai 🍼' },
-  { message: 'Palak, tumhari smile bahut pyaari hai 💗', face: 'love', prop: 'heart', count: 1, fur: 1, anim: 'float', bg: ['💗', '😊', '✨'], reaction: 'Teddy ke gaal itne laal, tamatar bhi sharma gaya 🍅' },
+  { message: '{name}, tumhari smile bahut pyaari hai 💗', face: 'love', prop: 'heart', count: 1, fur: 1, anim: 'float', bg: ['💗', '😊', '✨'], reaction: 'Teddy ke gaal itne laal, tamatar bhi sharma gaya 🍅' },
   { message: 'Ye jaadui phool sirf sachche sorry pe khilta hai. Dekho, khil gaya! ✨', face: 'excited', prop: 'magicFlower', count: 1, fur: 3, anim: 'float', bg: ['🪄', '✨', '🦋'], reaction: 'Phool ne glitter chhoda aur sharma gaya ✨' },
   { message: 'Ek chance de do? Main sach mein try karunga.', face: 'hopeful', prop: 'bouquet', count: 1, fur: 2, anim: 'sway', bg: ['🌷', '🌿'], reaction: 'Teddy ne seene pe haath rakha. Pakka promise 🤝' },
   { message: 'Mujhe pata hai maine tumhe hurt kiya. Wo mera irada nahi tha, par asar toh hua. Sorry 💌', face: 'teary', prop: 'letter', count: 1, fur: 0, anim: 'bob', bg: ['💌', '🕊️'], reaction: 'Chitthi ek baar aur padhi. Ab sabse sachchi wali 💌' },
@@ -604,7 +604,40 @@ function buildBackgroundHearts() {
 }
 
 /* ---------- Boot ---------- */
+/* ---------- Name from URL path (/<repo>/<name>) ---------- */
+const DEFAULT_NAME = 'Palak';
+
+function getName() {
+  try {
+    const n = new URLSearchParams(location.search).get('n');
+    if (n && n.trim()) return n.trim().slice(0, 40);
+  } catch (e) { /* fall through */ }
+  return DEFAULT_NAME;
+}
+
+function applyName(name) {
+  const fill = (str) => str.replace(/\{name\}/g, name).replace(/\{NAME\}/g, name.toUpperCase());
+  for (const k of Object.keys(CONFIG)) CONFIG[k] = fill(CONFIG[k]);
+  for (const lv of LEVELS) {
+    lv.message = fill(lv.message);
+    lv.reaction = fill(lv.reaction);
+  }
+  document.title = fill(document.title);
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+    node.nodeValue = fill(node.nodeValue);
+  }
+}
+
 function init() {
+  const name = getName();
+  applyName(name);
+  if (name !== DEFAULT_NAME || location.search) {
+    const base = location.pathname.replace(/\/[^/]*$/, '/');
+    try {
+      history.replaceState(null, '', base + encodeURIComponent(name) + location.hash);
+    } catch (e) { /* file:// etc. — keep ?n= URL */ }
+  }
   if (LEVELS.length !== 60) console.warn(`Expected 60 levels, found ${LEVELS.length}`);
 
   els.introTeddy.className = 'teddy-wrap n1 anim-bob';

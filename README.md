@@ -2,6 +2,11 @@
 
 A tiny, cute apology website. Pure HTML + CSS + vanilla JS. No build, no dependencies, free to host.
 
+## Name in the URL
+Share `https://<user>.github.io/<repo>/<Name>` — the name fills every spot that used to say Palak (no name = `Palak`).
+Works via `404.html` (GitHub Pages serves it for unknown paths, it redirects to `?n=<Name>`).
+Locally, open `index.html?n=Riya`. For a user/root site (no repo segment), set `segmentsToKeep = 0` in `404.html`.
+
 ## Customise (top of `script.js`)
 - `senderName`: your name (leave `''` to stay anonymous)
 - `finalMessage`: the Level 60 apology
